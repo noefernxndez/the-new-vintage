@@ -1,0 +1,1156 @@
+* {
+    /* sirve para que un elemento tenga su tamaño real sin padding, margin, etc */
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+/*CABECERA DEL DOCUMENTO*/
+header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 0px 5px 0px #65654C;
+    z-index: 1;
+}
+
+header section {
+    display: flex;
+    background-color: #181717;
+    justify-content: center;
+}
+
+header section p {
+    color: #F2F2F2;
+    text-align: center;
+}
+
+header .menu-web {
+    display: none;
+}
+
+header .menu-mobile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 0 10px;
+}
+
+.menu-mobile .hamburger {
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    background-color: #000;
+}
+
+.nav-links.active {
+    display: flex;
+}
+
+.nav-links li {
+    margin: 10px 0;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.menu-mobile .logo img {
+    width: 42px;
+}
+
+.logo-negativo{
+    width: 50px;
+}
+
+.section-ofertas {
+    padding: 5px 20px;
+}
+
+/* CUERPO DEL DOCUMENTO */
+
+/* main*/
+
+/* index */
+
+.heroimage {
+    width: 100%; 
+    height: auto; 
+    display: block; 
+    margin-bottom: 27px;
+}
+
+.index-fotobackground {
+    background-image: url("img/mobile-hero-index.png");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    width: 360px;
+    height: 247px;
+}
+
+.index-hero-contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 50px;
+}
+
+.index-hero-boton {
+    background-color: black;
+    color: white;
+    display: flex;
+    padding: 10px 20px;
+    width: 200px;
+    margin-left: 20px;
+}
+
+.index-sobre-nosotras-contenido {
+    width: 100%;
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+}
+
+.imagen-oferta {
+    width: 164px;
+    height: 182px;
+    display: block;
+}
+
+.contenedor-ofertas-index {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.imagen-tnv {
+    display: none;
+}
+
+.index-hero-texto {
+    text-align: left;
+    padding-left: 18px;
+}
+
+h3 {
+    margin-bottom: 20px;
+}
+
+.lupa-index{
+    background-color: #ECECEC;
+    width: 356px; 
+    display: flex;
+    align-items: center;
+}
+
+.buscar-input {
+    background-color: #ECECEC;
+    padding: 10px 10px;
+    border: 20px;
+    width: 75%;
+    height: 32px;
+    margin: 10px;
+}
+
+.oferta-descripcion {
+    color: black; 
+    font-size: 14px;
+    text-decoration: none; 
+}
+
+.oferta-descripcion:hover {
+    background-color: #5a6925;
+    color: #ffffff; 
+}
+
+.boton-vermas {
+    padding: 10px 20px; 
+    text-decoration: none; 
+    color: #000000; 
+    background-color: #ffffff; 
+    border: 2px solid #000; 
+    font-weight: bold; 
+}
+
+.index-sobre-nosotras-img {
+    padding: 10px 0;
+}
+
+.mobile-titulo-sn {
+    display: flex;
+    padding-top: 20px;
+    border-bottom: solid black 1px;
+}
+
+.mobile-index-sobre-nosotras-contenido {
+    display: block;
+}
+
+.desktop-index-sobre-nosotras-contenido {
+    display: none;
+}
+
+/* fin de index */
+
+.breadcrumb {
+    list-style: none;
+    display: flex;
+}
+
+.breadcrumb-item {
+    margin-right: 5px;
+}
+  
+.breadcrumb-item a {
+    text-decoration: none;
+    color: #000;
+}
+  
+.breadcrumb-item a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb-item.activo {
+    color: #6c757d;
+    pointer-events: none;
+    cursor: default;
+}
+
+.breadcrumb-item::after {
+    content: ">";
+    margin-left: 5px;
+}
+
+main{
+    padding: 0 10px;
+    width: 100%;
+    margin: 2em auto;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+main .article1 div ol{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+main .article1 div ol li{
+    position: relative;
+    padding-left: 20px;
+}
+main .article1 div ol li:not(:first-child)::before{
+    content: ">";
+    position: absolute;
+    left: 5px;
+    right: 5px;
+}
+main .article1 div ol li a{
+    text-decoration: none;
+    color: #181717;
+}
+main .article1 div ol li a:hover{
+    text-decoration: underline;
+    color: #181717;
+}
+
+main .section1{
+    width: 70%;
+}
+
+main .section2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+h4{
+    font-family: "poppins", sans-serif;
+    color: black; 
+    font-weight: semibold;
+}
+
+h1 {
+    font-family: "poppins", sans-serif;
+    color: black; 
+    font-size: 20px; 
+    font-weight: bold; 
+}
+
+/*estilo blog*/
+
+.botonreseniablog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-color: black;
+    color: white;
+    font-size: large;
+    margin: 20px 0;
+}
+
+.rating_blog_ajustes{
+    display: flex;
+    width: 100%;
+}
+
+.rating_estrellas_tamanio{
+    width: 50%;
+}
+
+.rating_estrellas_tamanio article {
+    height: 30px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.rating_cuadrados_tamanio{
+    width: 50%;
+}
+
+.rating-div{
+    display: flex;
+}
+
+.rate_border{
+    border: 1px solid #C5AA1C;
+    height: 30px;
+    margin-top: 5px;
+}
+
+.rate_fill1{
+    width: 80%;
+    height: 100%;
+    background-color: #C5AA1C;
+}
+
+.rate_fill2{
+    width: 60%;
+    height: 100%;
+    background-color: #C5AA1C;
+}
+
+.rate_fill3{
+    width: 40%;
+    height: 100%;
+    background-color: #C5AA1C;
+}
+
+.rate_fill4{
+    width: 20%;
+    height: 100%;
+    background-color: #C5AA1C;
+}
+
+.rate_fill5{
+    width: 5%;
+    height: 100%;
+    background-color: #C5AA1C;
+}
+
+.boton_ordenar_blog{
+    width: 100%;
+    height: 30px;
+    border: 1px solid #181717;
+    font-size: large;
+    margin-top: 20px;
+    padding: 0 5px;
+}
+
+.resenias-blog-contenedor {
+    width: 100%;
+}
+
+.resenias-blog{
+    background-color:#5A6925;
+    color: white;
+    padding: 20px 30px;
+    border: none; 
+    margin: 20px 0;
+}
+
+.subtitulo-resenia{
+    margin: 10px 0;
+}
+
+.estrellas-resenia-contenedor{
+    margin: 0 0 0 auto;
+}
+
+.texto-resenia{
+    font-size: 15px;
+}
+
+.inforesenia{
+    display: flex;
+    gap: 10px;
+    border-bottom: 1px solid white;
+    align-items: center;
+}
+
+.inforesenia p{
+    font-size: 12px;
+}
+
+p.mini-resenia{
+    font-size: 10px;
+}
+
+.inforesenia img{
+    width: 15px;
+    height: 15px;
+}
+
+.fotos-resenia{
+    display: flex;
+    gap:5px;
+    margin-top: 10px;
+}
+
+.fotos-resenia img {
+    width: 100%;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}
+
+.material-symbols-outlined.filled {
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}
+
+.material-symbols-outlined.star {
+    color: #C5AA1C;
+}
+
+.mapa-de-ferias {
+    width: 100%;
+}
+
+.mapa-de-ferias iframe {
+    width: 100%;
+    height: 250px;
+}
+/* fin blog */
+
+
+/*estilo del quiz*/
+
+.pregunta-verde{
+    background-color: #5A6925;
+    color: white;
+    width: 100%;
+    padding: 20px 32px;
+    border: none; 
+    margin-top: 20px;
+    margin-bottom: 20px ;
+}
+
+.opciones-respuesta-quiz{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 25px ;
+}
+
+.pregunta-rosa{
+    background-color: #dda2a2;
+    color: white;
+    width: 100%;
+    padding: 20px 32px;
+    border: none; 
+    margin-top: 20px;
+    margin-bottom: 20px ;
+}
+
+.pregunta-amarillo{
+    background-color: #C5AA1C;
+    color: white;
+    width: 100%;
+    padding: 20px 32px;
+    border: none; 
+    margin-top: 20px;
+    margin-bottom: 20px ;
+}
+
+.label-quiz{
+    background-color: black ;
+    color: white; 
+    padding: 20px 32px;
+    border: 20px; 
+    width: 75%;
+    height: 32;
+    margin: 10px;
+}
+
+.boton-resultado{
+    display: inline-block;
+    background-color: black ;
+    color: white; 
+    padding: 20px 32px;
+    border: none; 
+    width: 100%;
+    font-size: 18px;
+}
+
+.pregunta input{
+    display: none;
+}
+.pregunta input:checked + label{
+    color: black;
+    font-weight: bolder;
+    background-color: #fff;
+}
+
+.subtitulo {
+    font-family: "poppins", sans-serif;
+    color: black; 
+    font-size: 27px; 
+    font-weight: semibold; 
+}
+
+.subtitulo2 {
+    font-family: "poppins", sans-serif;
+    font-weight: bold;
+    color: black; 
+    font-size: 20px; 
+    font-weight: semibold; 
+}
+.parrafo {
+    font-family: "poppins", sans-serif;
+    color: black; 
+    font-size: 16px; 
+    font-weight: regular; 
+    margin: 10px 0;
+}
+.mini {
+    font-family: "poppins", sans-serif;
+    color: black; 
+    font-size: 13px; 
+    font-weight: regular; 
+    margin: 20px;
+}
+
+.resultado{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #dda2a2;
+    color: white;
+    padding: 20px 32px;
+    border: none; 
+    margin: 20px;
+}
+
+.inspo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.imagenes-inspo{
+    margin: 10px;
+    width: auto;
+    height: 250px; 
+    display: block; 
+}
+
+/* fin quiz */
+
+
+.secciondeiconosrosas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.iconorosa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.iconorosa p{
+    color:#DDA2A2;
+}
+
+.material-symbols-outlined.pink{
+    color: #DDA2A2;
+    font-size: 45px;
+}
+
+/* dona tu ropa */
+.contenedor-foto-hero {
+    width: 100%;
+}
+
+.hero-dona {
+    background-image: url('img/mobile-foto-header-dona-tu-ropa.png');
+    background-size: cover; /* La imagen cubrirá completamente el área del header */
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido */
+}
+
+.hero-contenido {
+    text-align: left; /* Centra el texto */
+    padding: 100px 10px 20px 10px;
+}
+
+.boton-donar {
+    display: inline-block; 
+    background-color: black ;
+    color: white; 
+    padding: 10px 50px;
+}
+
+.subtitulo-dona {
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.lista-donar {
+    list-style: circle;
+    padding: 0 20px;
+}
+
+/* fin donar */
+
+/* PRODUCTO */
+
+.foto-producto{
+    width: 100%;
+    display: block;
+}
+
+.info-buzo{
+width: 100%;
+}
+
+.titulobuzoazul{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.mediodepago{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: gray;
+}
+.mediodepago:hover{
+    text-decoration: underline;
+}
+
+.agregarcarrito{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-color: black;
+    color: white;
+    font-size: large;
+    margin: 20px 0;
+}
+.agregarcarrito:hover{
+    box-sizing: border-box;
+    opacity: 0.8;
+        color: wheat;
+}
+
+.dec{
+    display: flex;
+    flex-direction: column;
+}
+.desplegable{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.comocuidar{
+    width: 100%;
+    font-size: small;
+    font-display: flex;
+    flex-wrap: wrap;
+}
+
+.comolavar{
+    display: flex; 
+    gap: 5em; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+.conjuntoropa{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/* fin de producto */
+
+/* Tienda */
+.contenedortienda {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contenedortienda article {
+    width: 150px;
+    height: 270px;
+    margin: 10px;
+}
+
+.producto {
+    width: 150px;
+    height: 182px;
+    display: block;
+}
+
+.contenedor-filtros {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding-top:10px;
+    box-sizing: border-box;
+}
+
+.section-filtro{
+    width: 100%;
+}
+
+.div-filtro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    width: 48%;
+    height: 40px;
+    background: black;
+    border: 1px solid black;
+}
+
+.div-filtro select {
+    padding: 5px;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    border: none;
+    margin: 5px;
+    width:100%;
+}
+
+.titulo-producto-tienda{
+    margin-top: 6px;
+    padding-right:3px;
+}
+
+.titulo-producto-tienda a{
+    text-decoration: none;
+}
+
+.descripcion-producto-tienda{
+    color: black; 
+    font-size: 14px;
+}
+
+.precio-producto-tienda{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.shopping-cart-tienda{
+    border: 1.5px solid black;
+    margin-top: 6px;
+    padding: 2px;
+}
+
+.contenedor-carrito{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* fin de tienda */
+
+/* PIE DEL DOCUMENTO */
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-location{
+    text-align: center;
+}
+
+.redes-sociales{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px 0;
+    gap: 20px;
+}
+
+footer .redes-sociales img{
+    width: 24px;
+}
+
+footer .red-social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:5px;
+}
+
+footer p{
+    text-align: center;
+}
+
+
+
+/* media queries*/
+@media (min-width: 425px) {
+    main {
+        max-width: 1024px;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    header .menu-mobile {
+        display: none;
+    }
+
+    header .menu-web {
+        display: flex;
+    }
+
+    header nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        height: 85px;
+        gap: 40px;
+    }
+    
+    header nav .logo {
+        display: flex;
+        align-items: center;
+    }
+    
+    header nav .logo img {
+        width: 50px;
+    }
+
+    header nav ul {
+        display: flex;
+        gap: 40px;
+        flex-wrap: nowrap;
+        list-style: none;
+    }
+    
+    header nav ul li {
+        padding: 10px;
+    }
+    
+    header nav ul li:hover {
+        background-color: #5A6925;
+        border-radius: 2px;
+    }
+    
+    header nav ul li a {
+        color: #181717;
+        text-decoration: none;
+    }
+    
+    header nav ul li a:hover {
+        color: white;
+    }
+    
+    header .datosUsuario {
+        display: flex;
+        gap: 2em;
+        justify-content: space-evenly;
+    }
+
+    .secciondeiconosrosas {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        margin: 50px 0;
+    }
+
+    .redes-sociales {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 200px;
+        text-align: start;
+    }
+
+    footer .red-social {
+        justify-content: flex-start;
+    }
+
+    .experiencia-blog {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        gap: 40px;
+    }
+
+    .experiencia-blog-contenido {
+        flex: 1;
+    }
+
+    .rating_blog_ajustes {
+        gap: 40px;
+    }
+
+    .rating_estrellas_tamanio article {
+        width: 60%;
+    }
+
+/* quiz */
+
+    .pregunta-verde{
+        justify-content:flex-start;
+        width: 100%;
+        gap: 40px;
+    }
+    .opciones-respuesta-quiz{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-basis: 100%;
+    }
+
+    .boton-resultado {
+        margin: 0 0 30px 0;
+    }
+
+/* producto */ 
+    .foto-producto{
+        width: 40%;
+    }
+    .info-buzo{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-self: flex-start;
+        margin-left: 30px;
+    }
+    .buzo-azul{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 30px;
+    }
+    
+    .comocuidar{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        margin-left: 30px;
+    }
+    .comocuidar-ropa{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 30px;
+    }
+/*fin de producto*/
+
+/* tienda */
+
+    .contenedortienda {
+        justify-content: space-between;
+    }
+
+    .contenedortienda article {
+        width: 280px;
+        height: 380px;
+    }
+
+    .producto {
+        width: 280px;
+        height: 300px;
+    }
+
+    .contenedor-filtros{
+        justify-content: center;
+        width:100%;
+    }
+
+    .div-filtro {
+        margin-left: auto; 
+        margin-right: auto;
+    }
+
+/* doná tu ropa */
+    .hero-dona {
+        background-image: url('img/desktop-header-dona-tu-ropa.png');
+        background-size: cover; /* La imagen cubrirá completamente el área del header */
+        display: flex;
+        align-items: center; /* Centra verticalmente el contenido */
+        height: 500px;
+    }
+    
+    .hero-contenido {
+        text-align: left; /* Centra el texto */
+        padding: 200px 10px 20px 20px;
+    }
+    
+    .hero-contenido p {
+        font-size: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .boton-donar {
+        display: inline-block; 
+        background-color: black ;
+        color: white; 
+        padding: 10px 50px;
+    }
+
+    .info-donar {
+        display: flex;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .info-donar-primero {
+        width: 50%;
+    }
+
+    .info-donar-segundo {
+        width: 50%;
+    }
+
+/* index */
+    .index-fotobackground {
+    background-image: url('img/mobile-hero-index.png');
+    background-size: cover;
+    display: flex;
+    align-items: center; 
+    height: 500px;
+    width: 1000px;
+    }
+    .index-hero-contenido {
+        text-align: left; 
+        padding: 200px 10px 20px 20px;
+    } 
+    .imagen-oferta {
+        width: 250px;
+        height: 280px;
+        display: block;
+    }
+    .contenedor-ofertas-index {
+        display: flex;
+        justify-content: center;
+    }
+    .contenedor-ofertas-index > article {
+        margin: 9px;
+    }
+    .contenedor-comen-index {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .lupa-index{
+        background-color: #ECECEC;
+        width: 1000px; 
+    }
+    .buscar-input {
+        background-color: #ECECEC;
+        padding: 10px 10px;
+        border: 20px;
+        width: 80%;
+        height: 32px;
+        margin: 10px;
+    }
+
+    .mobile-index-sobre-nosotras-contenido {
+        display: none;
+    }
+    
+    .desktop-index-sobre-nosotras-contenido {
+        display: flex;
+        width: 100%;
+        padding: 50px 0;
+        gap: 10px;
+        position: relative;
+    }
+
+    .imagen-tnv {
+        display: flex;
+        position: absolute;
+        top: -70px;
+        right: -80px;
+        width: 450px;
+        z-index: -1;
+    }
+
+    .index-sobrenosotras, .index-sobre-nosotras-img {
+        width: 50%;
+    }
+
+    .titulo-sobre-nosotras {
+        font-size: 66px;
+        font-weight: 900;
+    }
+
+    
+}

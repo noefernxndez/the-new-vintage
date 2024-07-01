@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TNV Quiz</title>
+    <link rel="stylesheet" href="">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <meta name="description" content="Exclusivo para los amantes de la moda vintage. Con una selección cuidadosamente curada de prendas, calzado y accesorios de época, ofrecemos una experiencia de compra única que combina la nostalgia del pasado con la conveniencia del presente. Descubrí piezas íncreibles y únicas que hagan destacar tu estilo y personalidad. Mirá la nueva forma de comprar y únite a nuestra comunidad de moda vintage">
+    <meta name="keywords" content="vintage,ropa,ferias,usado,ropa vintage,estilo,donar ropa,reutilizar,reciclar">
+</head>
+<body>
+    <header>
+        <section class="section-ofertas"> 
+            <p>🚀💥 ¡Ultimos días para la oferta 2x1 en objetos! ¡No te lo pierdas!</p>
+        </section>
+        <nav class="menu-web">
+            <div class="logo">
+                <figure>
+                    <a href="index.html"><img src="img/logotnv.svg" alt="logo the new vintage"></a>
+                </figure>
+                <h4>The New vintage</h4>
+            </div>
+            <ul>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="donaturopa.html">Doná tu ropa</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+            </ul>
+            <div class="datosUsuario">
+               <div>
+                    <span class="material-symbols-outlined">
+                    account_circle
+                    </span>
+               </div>
+               <div>
+                    <span class="material-symbols-outlined">
+                    shopping_cart
+                    </span>
+               </div>
+            </div>
+        </nav>
+<!-- Menú mobile - segundo nav -->
+        <nav class="menu-mobile">
+            <div>
+                <span class="material-symbols-outlined">
+                    shopping_cart
+                </span>
+           </div>
+            <div class="logo">
+                <figure>
+                    <a href="index.html"><img src="img/logotnv.svg" alt="logo the new vintage"></a>
+                </figure>
+            </div>
+            <div id="menu-toggle">
+                <span class="material-symbols-outlined">
+                    menu
+                </span>
+            </div>
+        </nav>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="tienda.html">Tienda</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="donaturopa.html">Doná tu ropa</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="#">Mi Cuenta</a></li>
+        </ul>
+    </header>
+    <main>
+         <h1>TNV Quiz</h1>
+         <div>
+        <!-- Migajas de pan -->
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+                <li class="breadcrumb-item activo">Quiz</li>
+            </ol>
+        </div>
+        <h2 class="subtitulo">¿Qué estilo sos?</h1>
+        <h2 class="subtitulo2">Jugá y descubrí tu estilo</h2>
+        <p class="parrafo">Respondiendo unas preguntas rápidas podémos decirte que VIBE tenés. 
+            ¡Conocéte, inspiráte, compartílo!</p>
+        <!-- cuestionario-->
+        <form action="resultado_quiz.html" method="get">
+            <section class="pregunta-verde pregunta"> <!--pregunta 1-->
+             <p>¿Prefieres usar ropa ajustada o holgada?</p>
+             <section class="opciones-respuesta-quiz">
+                <input name="una_opcion" type="radio" value="ajustada" id="ajustada"> 
+                <label for="ajustada" class="label-quiz">Ajustada</label>
+                <input name="una_opcion" type="radio" value="holgada" id="holgada"> 
+                <label for="holgada" class="label-quiz">Holgada</label>
+                <input name="una_opcion" type="radio" value="varia" id="varia"> 
+                <label for="varia" class="label-quiz">Me gusta variar dependiendo de la ocasión</label>
+             </section>
+            </section>
+            <section class="pregunta-rosa pregunta"> <!--pregunta 2-->
+                <p>¿Qué tipos de colores predominan en tu armario?</p>
+                <section class="opciones-respuesta-quiz">
+                <input name="checkbox" type="checkbox" value="neutros" id="neutros">
+                    <label for="neutros" class="label-quiz">Neutros</label>
+                <input name="checkbox" type="checkbox" value="brillantes" id="brillantes">
+                    <label for="brillantes" class="label-quiz">Brillantes</label>
+                <input name="checkbox" type="checkbox" value="nude" id="nude">
+                    <label for="nude" class="label-quiz">Nude</label>
+                <input name="checkbox" type="checkbox" value="varia" id="varia">
+                    <label for="varia" class="label-quiz">Varían según la temporada</label>
+                </section>
+            </section>
+            <section class="pregunta-amarillo pregunta"> <!--pregunta 3-->
+                <p>¿Qué tipo de calzado preferís usar?</p>
+                <select class="label-quiz">
+                    <option>Deportivo</option>
+                    <option>Formal</option>
+                    <option>Casual</option>
+                    <option>Botas</option>
+                    <option>Ballet-Flats</option>
+                </select>
+            </section>
+            <section class="pregunta-verde"> <!--pregunta 4-->
+                <p>¿Cómo describirías tu estilo al vestir en una palabra?</p>
+                <section class="opciones-respuesta-quiz">
+                <input class="label-quiz" name="descripcion" type="text" placeholder="Ej: Coquette" required>
+                </section>
+            </section>
+            <section class="pregunta-rosa pregunta"> <!--pregunta 5-->
+                <p>¿En qué tipo de tiendas te gusta comprar?</p>
+                <section class="opciones-respuesta-quiz">
+                <input name="una_opcion" type="radio" value="segunda" id="segunda"> 
+                   <label for="segunda" class="label-quiz">Tiendas de segunda mano</label>
+                <input name="una_opcion" type="radio" value="ferias" id="ferias"> 
+                   <label for="ferias" class="label-quiz">Ferias de ropa</label>
+                <input name="una_opcion" type="radio" value="emprendimientos" id="emprendimientos"> 
+                   <label for="emprendimientos" class="label-quiz">Emprendimientos de ropa intervenida</label>
+                <input name="una_opcion" type="radio" value="almacen" id="almacen"> 
+                   <label for="almacen" class="label-quiz">Grandes almacenes</label>
+                </section>
+            </section>
+            <section class="pregunta-amarillo pregunta"> <!--pregunta 6-->
+                <p>¿Qué tipo de prendas preferís?</p>
+                <select class="label-quiz">
+                    <option>Estampadas</option>
+                    <option>Coloridas</option>
+                    <option>Basicas</option>
+                    <option>Bordadas</option>
+                </select>
+            </section>
+            <section class="pregunta-verde pregunta"> <!--pregunta 7-->
+                <p>¿Qué tipo de accesorios sueles usar con frecuencia?</p>
+                <section class="opciones-respuesta-quiz">
+                <input name="checkbox" type="checkbox" value="joyas" id="joyas">
+                    <label for="joyas" class="label-quiz">Joyería (anillos, collares, pulseras)</label>
+                <input name="checkbox" type="checkbox" value="bufanda" id="bufanda">
+                    <label for="bufanda" class="label-quiz">Pañuelos o bufandas</label>
+                <input name="checkbox" type="checkbox" value="gorra" id="gorra">
+                    <label for="gorra" class="label-quiz">Gorras o sombreros</label>
+                <input name="checkbox" type="checkbox" value="lentes" id="lentes">
+                    <label for="lentes" class="label-quiz">Lentes</label>
+                </section>
+            </section>
+            <section class="pregunta-rosa"> <!--pregunta 8-->
+                <p>Del 1 al 10 que tanto seguís las tendencias de moda</p>
+                <input class="label-quiz" name="numero" type="number" step="1" min="1" max="10"required placeholder="Utilice números">
+            </section>
+            <section class="pregunta-amarillo pregunta"> <!--pregunta 9-->
+                <p>¿Qué tejidos te resultan más cómodos o te gustan más?</p>
+                <section class="opciones-respuesta-quiz">
+                <input name="checkbox" type="checkbox" value="algodon" id="algodon">
+                    <label for="algodon" class="label-quiz">Algodón</label>
+                <input name="checkbox" type="checkbox" value="lana" id="lana">
+                    <label for="lana" class="label-quiz">Lana</label>
+                <input name="checkbox" type="checkbox" value="cuero" id="cuero">
+                    <label for="cuero" class="label-quiz">Cuero</label>
+                <input name="checkbox" type="checkbox" value="seda" id="seda">
+                    <label for="seda" class="label-quiz">Seda</label>
+                </section>
+            </section>
+            <section class="pregunta-verde"> <!--pregunta 10-->
+                <p>¿Te gusta experimentar con diferentes estilos o prefieres mantener un estilo constante?</p>
+                <section class="opciones-respuesta-quiz">
+                <input class="label-quiz" name="opinion" type="text" required placeholder="Escriba aquí">
+                </section>
+            </section>
+            <section>
+                <input class="boton-resultado" type="submit" value="Resultado">
+            </section>
+        </form>
+    </main>
+    <footer>
+        <div class="footer-logo">
+            <div>
+                <img src="img/logotnv-white.svg" class="logo-negativo" alt="logo de The New Vintage">
+            </div>
+            <p>The New Vintage</p> 
+        </div>
+        <div class="footer-location">
+            <div>
+                <span class="material-symbols-outlined">
+                    location_on
+                </span>        
+            </div>
+            <div>
+                <p>1692 Av. Hipólito Yrigoyen</p>
+                <p>Ciudad Autónoma de Buenos Aires</p>
+            </div>
+        </div>
+        <div class="redes-sociales">
+            <div>
+                <h5>Contacto</h5>
+                <div>
+                    <div class="red-social">
+                        <img src="img/whatsapp.svg" width="50" alt="logo de whatsapp">
+                        <span>+54 1158743729</span>
+                    </div>
+                    <div class="red-social">
+                        <span class="material-symbols-outlined">
+                            mail
+                        </span>
+                        <span>thenewvintage@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h5>Seguinos en las redes</h5>
+                <div>
+                    <div class="red-social">
+                        <img src="img/instagram.svg" width="50" alt="logo de instagram">
+                        <span>thenewvintage</span>
+                    </div>
+                    <div class="red-social">
+                        <img src="img/twitter.svg" width="50" alt="logo de twitter">
+                        <span>thenewvintage</span>
+                    </div>
+                    <div class="red-social">
+                        <img src="img/youtube.svg" width="50" alt="logo de youtube">
+                        <span>thenewvintageyt</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p>Copyright The New Vintage - 2024. Todos los derechos reservados. Defensa de las y los consumidores. Para reclamos ingresá acá.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
